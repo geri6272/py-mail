@@ -1,0 +1,44 @@
+{
+    "users": {
+        "1": {
+            "user_name": "pork",
+            "name": "John",
+            "surname": "Doe",
+            "email": "john.doe@pymail.com",
+            "mails": [
+                "hello",
+                "welcome bro"
+            ],
+            "sender": [
+                "Alex",
+                "Alex"
+            ]
+        },
+        "2": {
+            "user_name": "jess",
+            "name": "jessi",
+            "surname": "Doe",
+            "email": "jessi.doe@pymail.com",
+            "mails": [],
+            "sender": []
+        },
+        "3": {
+            "user_name": "axe",
+            "name": "Alex",
+            "surname": "Doe",
+            "email": "alex.doe@pymail.com",
+            "mails": [],
+            "sender": []
+        }
+    },
+    "id": {
+        "pork": "1",
+        "jess": "2",
+        "axe": "3"
+    },
+    "mails": {
+        "john.doe@pymail.com": "1",
+        "jessi.doe@pymail.com": "2",
+        "alex.doe@pymail.com": "3"
+    }
+}

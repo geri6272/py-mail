@@ -15,6 +15,7 @@ def get_user():
     user = input("Enter your username: ")
 
 def settings():
+    os.system("cls")
     for key in setting:
         print(f"{key} = {setting[key]}")
     edit = input("Enter the editable setting (use enter to skip): ")
@@ -60,6 +61,7 @@ def send_messange():
         print("the receiver didn't exist")
 
 def register():
+    os.system("cls")
     username = input("select your mail username: ")
     if " " in username:
         print("for the easyer use dont use space in your username")
@@ -83,7 +85,8 @@ def register():
 
 
 def read_mail():
-    os.system('cls||clear')
+    os.system("cls")
+    input("nyomj entert a folytatashoz") 
     id = get_id()
     if len(data["users"][id]["sender"]) <= int(setting["max_mails"]):
         for i in range(len(data["users"][id]["sender"])):
@@ -105,6 +108,7 @@ def read_mail():
 
 
 def log_in():
+    os.system("cls")
     if user in data["id"]:
         id = get_id()
         print(f'üdv {data["users"][id]["name"] + " " + data["users"][id]["surname"]}')
@@ -144,7 +148,17 @@ def del_user():
         return
 
 while n_exit == True:
-    os.system('cls||clear')
+    os.system("cls")
+    print("""
+                               _ _ 
+                              (_) |
+ _ __  _   _   _ __ ___   __ _ _| |
+| '_ \| | | | | '_ ` _ \ / _` | | |
+| |_) | |_| | | | | | | | (_| | | |
+| .__/ \__, | |_| |_| |_|\__,_|_|_|
+| |     __/ |                      
+|_|    |___/ 
+""")
     print("1. login/register")
     print("2. settings")
     print("3. delete user")
